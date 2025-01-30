@@ -1,2 +1,2 @@
-- View site: [Click Here](https://appl314.github.io/teehee/)
-//*view wesbite in browser*//
+- View site in browser: [Click Here](https://appl314.github.io/teehee/)
+
