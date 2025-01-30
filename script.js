@@ -5,41 +5,39 @@ function showMessage(response) {
     const maxWidth = window.innerWidth - noButton.offsetWidth;
     const maxHeight = window.innerHeight - noButton.offsetHeight;
 
-    // Set button position to absolute
+    //button position 
     noButton.style.position = "absolute";
 
-    // Change image source to "gun.gif"
+    // shoot 
     document.getElementsByClassName("image")[0].src = "kittyshoot.gif";
 
-    // Generate random coordinates within the visible container
+    // random coords
     const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
     const randomY = Math.max(0, Math.floor(Math.random() * maxHeight));
 
-    // Apply new coordinates to the button
+    // new button coords
     noButton.style.left = randomX + "px";
     noButton.style.top = randomY + "px";
 
-    // Update text content and hide name message
+    // response to no
     document.getElementById("question").textContent =
       "bro ur selling :/";
     document.getElementById("name").style.display = "none";
-
-    // Optional: You can also add a timeout to reset the position after a few seconds
   }
 
   if (response === "Yes") {
-    // Remove name message and no button
+    // remove buttons
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
 
-    // Update text content, show message, and change image source to "dance.gif"
+    // change to dancing cat if yes
     const yesMessage = document.getElementById("question");
     yesMessage.textContent = "hooray!! see u on the 14th bbygworl😘😘";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "kittydance.gif";
 
-    // Remove yes button
+    // remove yes button
     document.getElementById("yesButton").remove();
   }
 }
