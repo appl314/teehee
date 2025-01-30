@@ -9,6 +9,7 @@ function showMessage(response) {
     noButton.style.position = "absolute";
 
     // Change image source to "gun.gif"
+    document.getElementsByClassName("image")[0].src = "angrykitty.jpg";
     document.getElementsByClassName("image")[0].src = "kittyshoot.gif";
 
     // Generate random coordinates within the visible container
