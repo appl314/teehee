@@ -6,7 +6,7 @@ body {
     justify-content: space-evenly;
     height: 100vh;
     margin: 0;
-    background: url('bg.jpg.webp');
+    background: url('bg.jpg');
     font-size: 35px;
     color: rgb(255, 0, 174);
 }
