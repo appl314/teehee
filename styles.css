@@ -7,8 +7,8 @@ body {
     height: 100vh;
     margin: 0;
     background: url('bg.jpg');
-    font-size: 35px;
-    color: rgb(255, 0, 174);
+    font-size: 30px;
+    color: rgb(224, 128, 162);
 }
 .hh{
     -webkit-text-stroke: 2px #71004f;
