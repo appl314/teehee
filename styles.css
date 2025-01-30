@@ -43,7 +43,7 @@ body
 }
 
 .buttons button {
-    background-color: ##e38f9c;
+    background-color: #e38f9c;
     color: #fff;
     padding: 10px 30px;
     border: none;
@@ -57,7 +57,7 @@ body
 }
 
 .buttons button:hover {
-    background-color: #7c1f37;
+    background-color: #66ad6f;
 
 }
 
