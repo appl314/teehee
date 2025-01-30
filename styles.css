@@ -21,7 +21,7 @@ body {
 #no-button {
     margin: 0 10px;
     color: white;
-    background-color: red;
+    background-color: green;
     height: 40px !important;
     width: auto;
     border: none;
