@@ -1,5 +1,5 @@
 body {
-    background:('bg.jpg');
+    background: url('bg.jpg');
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
     margin: 0 10px;
     color: white;
     background-color: #eb7a8f;
-    height: 40px !important;
+    height: 50px !important;
     width: auto;
     border: none;
     cursor: pointer;
@@ -36,7 +36,7 @@ body {
 
 #yes-button {
     margin: 0 10px;
-    color: white;
+    color: green;
     border: none;
     background-color: #6bb584;
     cursor: pointer;
