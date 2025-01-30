@@ -1,134 +1,89 @@
 body {
-    background: url('bg.jpg');
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Lobster', cursive; /* Change to a romantic cursive font */
+    background-color: #ffdde1;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0;
+    background: url('bg.jpg.webp');
+    font-size: 35px;
+    color: rgb(255, 0, 174);
+}
+.hh{
+    -webkit-text-stroke: 2px #71004f;
+    font-weight:900;
+
+}
+.pp{
+    -webkit-text-stroke: 2px #71004f;
+
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: 800;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    flex-direction: row;
-    align-items: end;
-    flex-wrap: wrap;
-}
-
-#no-button {
-    margin: 0 10px;
-    color: white;
-    background-color: #eb7a8f;
-    height: 50px !important;
-    width: auto;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-
-    p {
-        margin: 0;
-        object-fit: contain;
-    }
-}
-
-#yes-button {
-    margin: 0 10px;
-    color: green;
-    border: none;
-    background-color: #6bb584;
-    cursor: pointer;
-    height: 50px;
-    width: auto;
-
-    p {
-        margin: 0;
-        object-fit: contain;
-    }
-}
-
-/* Make responsive for mobile */
-@media (max-width: 768px) {
-    body {
-        padding: 0 20px;
-    }
-}
+body
 
 .container {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    padding: 20px;
     text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.message {
-    display: none;
+.image{
+    height: 280px;
+    
 }
 
-.banner-gif {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+.buttons button {
+    background-color: #ff4d79;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Lobster', cursive; /* Change to a romantic cursive font */
 
-    img {
-        width: auto;
-        height: 250px;
-    }
 }
 
-.language-selector {
-    margin-top: 30px;
-    position: unset;
-    font-family: Arial, sans-serif;
+.buttons button:hover {
+    background-color: #7c1f37;
+
+}
+
+.buttons{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex-direction: row;
 }
 
-.language-selector label {
-    margin-right: 10px;
+#no-button{
+    
 }
 
-.language-selector select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+.hidden-message {
+    display: none;
+    margin-top: 20px;
 }
 
-.creator {
-    text-decoration: none;
-    color: #333;
+.move {
+    animation: moveNoMessage 0.5s linear;
 }
 
-.creator:visited {
-    text-decoration: none;
-    color: #333;
+@keyframes moveNoMessage {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(30px, 30px); }
+    50% { transform: translate(-20px, -20px); }
+    75% { transform: translate(10px, 10px); }
+    100% { transform: translate(0, 0); }
 }
-
-.creator:hover {
-    text-decoration: underline;
-    color: #555;
-}
-
-/* CSS For Mobile */
-@media (max-width: 768px) {
-    .language-selector {
-        position: unset;
-        margin-top: 30px;
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-}
-  
-   
